@@ -1,16 +1,17 @@
 package entities.abstracts;
 
 public abstract class Users {
+
     private String id;
-    private  String firstName;
-    private  String LastName;
+    private String FirstName;
+    private String LastName;
 
     public Users() {
     }
 
     public Users(String id, String firstName, String lastName) {
         this.id = id;
-        this.firstName = firstName;
+        FirstName = firstName;
         LastName = lastName;
     }
 
@@ -23,11 +24,11 @@ public abstract class Users {
     }
 
     public String getFirstName() {
-        return firstName;
+        return FirstName;
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
+        FirstName = firstName;
     }
 
     public String getLastName() {
@@ -37,4 +38,6 @@ public abstract class Users {
     public void setLastName(String lastName) {
         LastName = lastName;
     }
+
+    public abstract void showUsers();
 }
